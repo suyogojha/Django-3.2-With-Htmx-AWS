@@ -1,5 +1,5 @@
 staticfiles-cdn/
-references/
+.references/
 .DS_Store
 bin/
 
