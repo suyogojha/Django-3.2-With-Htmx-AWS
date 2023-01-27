@@ -1,6 +1,5 @@
 # Generate a one-off secret key in Django
 
-Original [Post](https://www.codingforentrepreneurs.com/blog/create-a-one-off-django-secret-key/).
 
 The code:
 
