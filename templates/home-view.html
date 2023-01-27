@@ -4,7 +4,7 @@
 <h1>{{ object.title }} (id: {{ id }})!</h1>
 <p>{{ content }}!</p>
 
-<a href='{% url "articles:create" %}'>Create Article</a>
+<a href='{% url "articles:create" %}'>Create Article</a> | <a href='{% url "recipes:list" %}'>Recipes List</a>
 <ul>
     {% for x in object_list %}
         {% if x.title %}
