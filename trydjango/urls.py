@@ -7,6 +7,9 @@ from accounts.views import (
     logout_view,
     register_view
 )
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 from search.views import search_view
 from .views import home_view
@@ -21,3 +24,6 @@ urlpatterns = [
     path('logout/', logout_view),
     path('register/', register_view),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

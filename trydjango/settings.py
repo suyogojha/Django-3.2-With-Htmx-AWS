@@ -148,7 +148,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
@@ -159,6 +158,9 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = BASE_DIR / "staticfiles-cdn" # in production, we want cdn
+
+
+MEDIA_ROOT = BASE_DIR / "staticfiles-cdn" / "uploads"
 
 # from .cdn.conf import * # noqa
 
