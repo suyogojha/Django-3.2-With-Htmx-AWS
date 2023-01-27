@@ -1,0 +1,54 @@
+[
+{
+    "model": "articles.article",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "title": "general",
+        "slug": "general",
+        "content": "Hello General",
+        "timestamp": "2023-01-26T12:18:33.070Z",
+        "updated": "2023-01-26T12:28:56.090Z",
+        "publish": "2023-01-26"
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "title": "Article 1",
+        "slug": "article-1",
+        "content": "This is Article 1",
+        "timestamp": "2023-01-26T12:30:48.341Z",
+        "updated": "2023-01-26T12:32:59.888Z",
+        "publish": null
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 3,
+    "fields": {
+        "user": null,
+        "title": "generals",
+        "slug": "generals",
+        "content": "sdf",
+        "timestamp": "2023-01-27T12:21:10.611Z",
+        "updated": "2023-01-27T12:21:10.615Z",
+        "publish": null
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 4,
+    "fields": {
+        "user": null,
+        "title": "generalyy",
+        "slug": "generalyy",
+        "content": "y",
+        "timestamp": "2023-01-27T12:26:37.858Z",
+        "updated": "2023-01-27T12:26:37.862Z",
+        "publish": null
+    }
+}
+]

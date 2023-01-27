@@ -1,0 +1,150 @@
+[
+{
+    "model": "recipes.recipe",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "name": "Cake",
+        "description": "aaa",
+        "directions": "aa",
+        "timestamp": "2023-01-27T10:39:13.467Z",
+        "updated": "2023-01-27T12:43:48.568Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipe",
+    "pk": 9,
+    "fields": {
+        "user": 1,
+        "name": "sadf",
+        "description": "asdf",
+        "directions": "sdf",
+        "timestamp": "2023-01-27T12:21:37.314Z",
+        "updated": "2023-01-27T12:22:18.071Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipe",
+    "pk": 10,
+    "fields": {
+        "user": 2,
+        "name": "Receipt 2sf",
+        "description": "hng",
+        "directions": "jhgjhg",
+        "timestamp": "2023-01-27T12:26:49.266Z",
+        "updated": "2023-01-27T12:27:42.069Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredientimage",
+    "pk": 6,
+    "fields": {
+        "recipe": 4,
+        "image": "recipes/ingredient/ca1e5b4a-9e39-11ed-b053-005056c00008.jpg",
+        "extracted": {}
+    }
+},
+{
+    "model": "recipes.recipeingredientimage",
+    "pk": 7,
+    "fields": {
+        "recipe": 4,
+        "image": "recipes/ingredient/d4d359c3-9e39-11ed-9b96-005056c00008.jpg",
+        "extracted": {}
+    }
+},
+{
+    "model": "recipes.recipeingredientimage",
+    "pk": 8,
+    "fields": {
+        "recipe": 9,
+        "image": "recipes/ingredient/2a1bb977-9e3d-11ed-9b93-005056c00008.jpg",
+        "extracted": {}
+    }
+},
+{
+    "model": "recipes.recipeingredientimage",
+    "pk": 9,
+    "fields": {
+        "recipe": 4,
+        "image": "recipes/ingredient/7b657144-9e3d-11ed-bd07-005056c00008.jpg",
+        "extracted": {}
+    }
+},
+{
+    "model": "recipes.recipeingredientimage",
+    "pk": 10,
+    "fields": {
+        "recipe": 10,
+        "image": "recipes/ingredient/efc5a3b4-9e3d-11ed-b214-005056c00008.jpg",
+        "extracted": {}
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 14,
+    "fields": {
+        "recipe": 9,
+        "name": "asdf",
+        "description": null,
+        "quantity": "150",
+        "quantity_as_float": 150.0,
+        "unit": "pound",
+        "directions": null,
+        "timestamp": "2023-01-27T12:22:01.731Z",
+        "updated": "2023-01-27T12:58:03.717Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 16,
+    "fields": {
+        "recipe": 9,
+        "name": "Receipt 2sf",
+        "description": null,
+        "quantity": "140",
+        "quantity_as_float": 140.0,
+        "unit": "pound",
+        "directions": null,
+        "timestamp": "2023-01-27T12:22:52.406Z",
+        "updated": "2023-01-27T12:22:52.406Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 17,
+    "fields": {
+        "recipe": 10,
+        "name": "asdasd With asdasd",
+        "description": null,
+        "quantity": "13",
+        "quantity_as_float": 13.0,
+        "unit": "pound",
+        "directions": null,
+        "timestamp": "2023-01-27T12:27:30.765Z",
+        "updated": "2023-01-27T12:27:30.765Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 18,
+    "fields": {
+        "recipe": 10,
+        "name": "Mango Sake 1v",
+        "description": null,
+        "quantity": "150",
+        "quantity_as_float": 150.0,
+        "unit": "pound",
+        "directions": null,
+        "timestamp": "2023-01-27T12:27:40.348Z",
+        "updated": "2023-01-27T12:27:40.348Z",
+        "active": true
+    }
+}
+]

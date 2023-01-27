@@ -1,0 +1,38 @@
+[
+{
+    "model": "meals.meal",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "recipe": 4,
+        "timestamp": "2023-01-27T12:56:40.734Z",
+        "updated": "2023-01-27T12:56:57.848Z",
+        "status": "a",
+        "prev_status": "a"
+    }
+},
+{
+    "model": "meals.meal",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "recipe": 4,
+        "timestamp": "2023-01-27T12:57:02.864Z",
+        "updated": "2023-01-27T12:57:02.912Z",
+        "status": "p",
+        "prev_status": "p"
+    }
+},
+{
+    "model": "meals.meal",
+    "pk": 6,
+    "fields": {
+        "user": 1,
+        "recipe": 9,
+        "timestamp": "2023-01-27T12:57:14.438Z",
+        "updated": "2023-01-27T12:57:14.494Z",
+        "status": "p",
+        "prev_status": "p"
+    }
+}
+]
