@@ -11,52 +11,38 @@
         display: none
     }
 </style>
-{% if message %}
 
-<p>{{ message }}</p>
-{% endif %}
 <div style='margin-top:30px;'>
-    <form action='.' method="POST">
-        {% csrf_token %}
-       {% for field in form %}
-       <div class='{% if field.field.required %}{{ form.required_css_class }}{%endif%}'>
-        {{ field.errors }}   
-        {{ field.label_tag }} {{ field }}
-        {% if field.help_text %}
-            <p class="help">{{ field.help_text|safe }}</p>
-        {% endif %}
-        </div>
-       {% endfor %}
+    {% include 'recipes/partials/forms.html' %}
 
+    <h3>Ingredients</h3>
+    {% for ingredient in object.get_ingredients_children %}
+            {% include 'recipes/partials/ingredient-inline.html' with object=ingredient %}
+    {% endfor %}
+    {% if new_ingredient_url %}
+    <div id='ingredient-create'>
+        
+    </div>
 
-        {% if formset %}
-        <h3>Ingredients</h3>
-        {{ formset.management_form }}
-        <div id='ingredient-form-list'>
-            {% for form in formset %}
-                    <div class='ingredient-form'>
-                        {{ form.as_p }}
-                    </div>
-            {% endfor %}
-        </div>
+    <button hx-get="{{ new_ingredient_url }}" hx-trigger='click'
+        hx-target='#ingredient-create' hx-swap='beforeend'>Add ingredient</button>
 
-        <div id='empty-form' class='hidden'>{{ formset.empty_form.as_p }}</div>
-        <button id='add-more' type='button'>Add more</button>
-        {% endif %}
-        <button style='margin-top:10px;' type='submit' >Save</button>
-    </form>
+    {% endif %}
 </div>
 
 <script>
     
-    const addMoreBtn = document.getElementById('add-more')
-    const totalNewForms = document.getElementById('id_form-TOTAL_FORMS')
     
-    addMoreBtn.addEventListener('click', add_new_form)
+    document.addEventListener('click', (event)=>{
+        if (event.target.id == 'add-more') {
+            add_new_form(event)
+        }
+    })
     function add_new_form(event) {
         if (event) {
             event.preventDefault()
         }
+        const totalNewForms = document.getElementById('id_form-TOTAL_FORMS')
         const currentIngredientForms = document.getElementsByClassName('ingredient-form')
         const currentFormCount = currentIngredientForms.length // + 1
         const formCopyTarget = document.getElementById('ingredient-form-list')

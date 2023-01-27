@@ -1,0 +1,92 @@
+[
+{
+    "model": "recipes.recipe",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "name": "Mango Sake 1v",
+        "description": "This is Mango",
+        "directions": "Shakea",
+        "timestamp": "2023-01-26T12:35:48.352Z",
+        "updated": "2023-01-27T04:41:52.170Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipe",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "name": "Receipt 2",
+        "description": "This is Receipe 2",
+        "directions": "2 Recipe",
+        "timestamp": "2023-01-26T12:38:41.122Z",
+        "updated": "2023-01-27T10:12:59.884Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 3,
+    "fields": {
+        "recipe": 2,
+        "name": "Receipt 2",
+        "description": "ad",
+        "quantity": "20",
+        "quantity_as_float": 20.0,
+        "unit": "kilogram",
+        "directions": "ad",
+        "timestamp": "2023-01-27T02:58:08.777Z",
+        "updated": "2023-01-27T02:58:44.493Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 4,
+    "fields": {
+        "recipe": 3,
+        "name": "Mango Sake 1",
+        "description": null,
+        "quantity": "15",
+        "quantity_as_float": 15.0,
+        "unit": "pound",
+        "directions": null,
+        "timestamp": "2023-01-27T03:46:17.379Z",
+        "updated": "2023-01-27T10:12:59.897Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 8,
+    "fields": {
+        "recipe": 3,
+        "name": "su2yog s21a",
+        "description": null,
+        "quantity": "437",
+        "quantity_as_float": 437.0,
+        "unit": "kilogram",
+        "directions": null,
+        "timestamp": "2023-01-27T10:12:59.903Z",
+        "updated": "2023-01-27T10:12:59.903Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 9,
+    "fields": {
+        "recipe": 3,
+        "name": "",
+        "description": null,
+        "quantity": "",
+        "quantity_as_float": 0.0,
+        "unit": "",
+        "directions": null,
+        "timestamp": "2023-01-27T10:12:59.906Z",
+        "updated": "2023-01-27T10:12:59.906Z",
+        "active": true
+    }
+}
+]
